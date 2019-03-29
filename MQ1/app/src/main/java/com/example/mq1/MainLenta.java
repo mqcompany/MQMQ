@@ -32,8 +32,10 @@ public class MainLenta extends AppCompatActivity implements View.OnClickListener
     private FirebaseAuth firebaseAuth;
     private TextView ShowEmail;
     private Button logoutB;
+    private FirebaseDatabase database;
+    private DatabaseReference myRefer;
 
-    FirebaseDatabase database;
+
 
     BottomNavigationView bottomNavigationView;
     HomeFragment homeFragment;
@@ -43,22 +45,24 @@ public class MainLenta extends AppCompatActivity implements View.OnClickListener
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_lenta);
+
+        database = FirebaseDatabase.getInstance();
+        myRefer = database.getReference();
         firebaseAuth = FirebaseAuth.getInstance();
         bottomNavigationView = (BottomNavigationView)findViewById(R.id.button_menu);
         bottomNavigationView.setOnNavigationItemSelectedListener((BottomNavigationView.OnNavigationItemSelectedListener) navigationItem);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragmet_container, new LentaFragment()).commit();
+
         if(firebaseAuth.getCurrentUser()==null){
             finish();
             startActivity(new Intent(this,Login.class));
         }
-        FirebaseUser user = firebaseAuth.getCurrentUser();
+        else {
+            FirebaseUser user = firebaseAuth.getCurrentUser();
+            myRefer.child("Users").push();
+            myRefer.child("Users").child(user.getUid().toString().trim()).child("Email").setValue(user.getEmail().toString());
 
-
-      //  ShowEmail = (TextView)findViewById(R.id.ShowEmailText);
-
- //       ShowEmail.setText(user.getEmail());
-
-
+        }
 
 
     }

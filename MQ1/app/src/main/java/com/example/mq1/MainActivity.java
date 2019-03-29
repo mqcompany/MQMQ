@@ -17,6 +17,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -34,12 +35,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private ProgressDialog progressDialog;
     private FirebaseAuth firebaseAuth;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //Ебашу базу данных (Красава)
         firebaseAuth = FirebaseAuth.getInstance();
+
 
         if(firebaseAuth.getCurrentUser()!= null){
             finish();
@@ -56,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //Ебашу ленту
     }
     public void registerUser(){
-        String Email = editTextEmail.getText().toString().trim();
+        final String Email = editTextEmail.getText().toString().trim();
         String Password =  editTextPassword.getText().toString().trim();
         if(TextUtils.isEmpty(Email)){
             Toast.makeText(this,"Пожалуйста введите E-mail",Toast.LENGTH_SHORT).show();
@@ -69,14 +73,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         progressDialog.setMessage("Регистрация пользователя...");
         progressDialog.show();
 
+
         firebaseAuth.createUserWithEmailAndPassword(Email,Password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 progressDialog.dismiss();
+
                 if (task.isSuccessful()){
                     Toast.makeText(MainActivity.this,"Вы успешно зарегистрированы",Toast.LENGTH_SHORT).show();
+
                     finish();
-                    startActivity(new Intent(getApplicationContext(),MainLenta.class));
+                    startActivityForResult(new Intent(getApplicationContext(),MainLenta.class),1);
                 }
                 else{
                     Toast.makeText(MainActivity.this,"Ошибка",Toast.LENGTH_SHORT).show();
