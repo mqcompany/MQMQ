@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\butus\\AndroidStudioProjects\\MQNEW\\MQ1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
+            "outputFile": "E:\\MQMQ1\\MQMQ\\MQ1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\butus\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\6a59a33c052c375f57acf0d21357af01\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\1323de0cddc672db5568725b99a8bc96\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\butus\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-28.0.0.aar\\b10c17daa522489f2723bfa982e486b2\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-28.0.0.aar\\282a357b3bcbc04b118691683219c710\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

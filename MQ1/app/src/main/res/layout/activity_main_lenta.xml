@@ -22,6 +22,10 @@
         app:menu="@menu/buttom_menu"
         app:itemIconSize="@android:dimen/app_icon_size"
         />
+
+
+
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -32,8 +32,7 @@ public class MainLenta extends AppCompatActivity implements View.OnClickListener
     private FirebaseAuth firebaseAuth;
     private TextView ShowEmail;
     private Button logoutB;
-    private FirebaseDatabase database;
-    private DatabaseReference myRefer;
+
 
 
 
@@ -45,9 +44,6 @@ public class MainLenta extends AppCompatActivity implements View.OnClickListener
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_lenta);
-
-        database = FirebaseDatabase.getInstance();
-        myRefer = database.getReference();
         firebaseAuth = FirebaseAuth.getInstance();
         bottomNavigationView = (BottomNavigationView)findViewById(R.id.button_menu);
         bottomNavigationView.setOnNavigationItemSelectedListener((BottomNavigationView.OnNavigationItemSelectedListener) navigationItem);
@@ -57,12 +53,7 @@ public class MainLenta extends AppCompatActivity implements View.OnClickListener
             finish();
             startActivity(new Intent(this,Login.class));
         }
-        else {
-            FirebaseUser user = firebaseAuth.getCurrentUser();
-            myRefer.child("Users").push();
-            myRefer.child("Users").child(user.getUid().toString().trim()).child("Email").setValue(user.getEmail().toString());
 
-        }
 
 
     }

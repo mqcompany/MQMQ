@@ -6,6 +6,7 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
@@ -83,7 +84,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     Toast.makeText(MainActivity.this,"Вы успешно зарегистрированы",Toast.LENGTH_SHORT).show();
 
                     finish();
-                    startActivityForResult(new Intent(getApplicationContext(),MainLenta.class),1);
+                    startActivityForResult(new Intent(getApplicationContext(),SettingProfile.class),1);
                 }
                 else{
                     Toast.makeText(MainActivity.this,"Ошибка",Toast.LENGTH_SHORT).show();

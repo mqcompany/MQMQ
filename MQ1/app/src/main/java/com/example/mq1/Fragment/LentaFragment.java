@@ -46,7 +46,7 @@ public class LentaFragment extends Fragment {
                 if (read_list1.size() > 0) { // sggds
                     read_list1.clear();
                 }
-                //проходим по всем записям и помещаем их в list_users в виде класса User
+                //проходим по всем записям и помещаем их в list_users в виде класса
                 for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
                     Read read = postSnapshot.getValue(Read.class);
                     read_list1.add(read);

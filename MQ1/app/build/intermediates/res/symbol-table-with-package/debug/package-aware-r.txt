@@ -1062,6 +1062,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_per
+drawable icons8edit
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
@@ -1092,8 +1093,9 @@ id ConstraintLayout2
 id EmailLoginText
 id EmailText
 id FUNCTION
-id LogOutB
 id META
+id Nickname
+id NicknameCh
 id PasswLoginText
 id PasswText
 id Questions
@@ -1129,6 +1131,8 @@ id all
 id always
 id async
 id auto
+id avatarView
+id avatarViewCh
 id barrier
 id beginning
 id blocking
@@ -1137,6 +1141,8 @@ id button
 id button2
 id button4
 id buttonPanel
+id buttonSavenickname
+id buttonSavenicknameCh
 id button_menu
 id cancel_action
 id center
@@ -1188,9 +1194,11 @@ id fixed
 id forever
 id fragmet_container
 id ghost_view
+id glide_custom_view_target_tag
 id gone
 id group_divider
 id groups
+id guideline
 id home
 id homeAsUp
 id ic_round
@@ -1204,6 +1212,8 @@ id imageView
 id info
 id invisible
 id italic
+id item1
+id item2
 id item_touch_helper_previous_elevation
 id labeled
 id largeLabel
@@ -1276,9 +1286,11 @@ id search_src_text
 id search_voice_btn
 id select_dialog_listview
 id selected
+id settingsAvatarView
 id shortcut
 id showCustom
 id showHome
+id showNickName
 id showTitle
 id smallLabel
 id snackbar_action
@@ -1321,6 +1333,7 @@ id title
 id titleDividerNoCustom
 id title_lenta
 id title_template
+id toolbar1
 id top
 id topPanel
 id touch_outside
@@ -1387,11 +1400,13 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_change_settings_profile
 layout activity_create_questions
 layout activity_create_quiz
 layout activity_login
 layout activity_main
 layout activity_main_lenta
+layout activity_setting_profile
 layout card_element
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1432,7 +1447,9 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+layout toolbar
 menu buttom_menu
+menu right_toolbar
 mipmap ic_launcher
 mipmap ic_launcher_round
 string abc_action_bar_home_description
@@ -1508,6 +1525,7 @@ string google_crash_reporting_api_key
 string google_storage_bucket
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
+string item1
 string mtrl_chip_close_icon_content_description
 string password_toggle_content_description
 string path_password_eye
