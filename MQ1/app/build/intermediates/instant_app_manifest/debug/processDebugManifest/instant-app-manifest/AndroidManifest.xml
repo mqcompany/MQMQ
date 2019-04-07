@@ -28,6 +28,10 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.mq1.ThisIsFragmentPlayGame" />
+        <activity
+            android:name="com.example.mq1.TittleGame"
+            android:theme="@style/TitleGame" />
         <activity
             android:name="com.example.mq1.CreateQuestions"
             android:theme="@style/Create" />

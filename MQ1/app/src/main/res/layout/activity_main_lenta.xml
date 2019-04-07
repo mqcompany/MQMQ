@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/relative_lenta"
     tools:context=".MainLenta">
 
 
@@ -20,7 +21,7 @@
         app:itemIconTint="@color/Black"
         app:itemTextColor="@color/White"
         app:menu="@menu/buttom_menu"
-        app:itemIconSize="@android:dimen/app_icon_size"
+        app:itemIconSize="40dp"
         />
     <FrameLayout
         android:layout_width="match_parent"

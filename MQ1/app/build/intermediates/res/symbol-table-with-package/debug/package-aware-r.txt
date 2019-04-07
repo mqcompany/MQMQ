@@ -1054,6 +1054,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable ic_action_name
 drawable ic_add
 drawable ic_home
 drawable ic_launcher_background
@@ -1097,6 +1098,7 @@ id META
 id PasswLoginText
 id PasswText
 id Questions
+id Quize_Image
 id SHIFT
 id SYM
 id SignIn
@@ -1152,6 +1154,7 @@ id chronometer
 id clip_horizontal
 id clip_vertical
 id collapseActionView
+id collapsing_toolbar
 id container
 id content
 id contentPanel
@@ -1169,6 +1172,7 @@ id design_navigation_view
 id dimensions
 id direct
 id disableHome
+id discription
 id editText
 id editText2
 id editText3
@@ -1186,7 +1190,9 @@ id fill_vertical
 id filled
 id fixed
 id forever
+id four
 id fragmet_container
+id fragmet_game_container
 id ghost_view
 id gone
 id group_divider
@@ -1201,6 +1207,7 @@ id ifRoom
 id imag_lenta
 id image
 id imageView
+id imageView2
 id info
 id invisible
 id italic
@@ -1231,6 +1238,7 @@ id mtrl_internal_children_alpha_tag
 id multiply
 id navigation_header_container
 id never
+id nickname
 id nickname_lenta
 id none
 id normal
@@ -1238,6 +1246,7 @@ id notification_background
 id notification_main_column
 id notification_main_column_container
 id number
+id one
 id outline
 id packed
 id parallax
@@ -1247,14 +1256,19 @@ id parent_matrix
 id percent
 id person
 id pin
+id playbottongame
 id progress_circular
 id progress_horizontal
 id question
+id question_image
+id question_text
 id radio
 id recQuestions
+id relative_lenta
 id right
 id right_icon
 id right_side
+id saveNicknameButton
 id save_image_matrix
 id save_non_transition_alpha
 id save_scale_type
@@ -1279,6 +1293,7 @@ id selected
 id shortcut
 id showCustom
 id showHome
+id showNickName
 id showTitle
 id smallLabel
 id snackbar_action
@@ -1316,11 +1331,13 @@ id text_input_password_toggle
 id textinput_counter
 id textinput_error
 id textinput_helper_text
+id three
 id time
 id title
 id titleDividerNoCustom
 id title_lenta
 id title_template
+id toolbar
 id top
 id topPanel
 id touch_outside
@@ -1329,10 +1346,12 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id two
 id uniform
 id unlabeled
 id up
 id useLogo
+id view_chronomenter
 id view_offset_helper
 id visible
 id wide
@@ -1392,6 +1411,8 @@ layout activity_create_quiz
 layout activity_login
 layout activity_main
 layout activity_main_lenta
+layout activity_this_is_fragment_play_game
+layout activity_tittle_game
 layout card_element
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1408,8 +1429,10 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout fragment_add
+layout fragment_chronometer
 layout fragment_home
 layout fragment_lenta
+layout fragment_play_game
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action
@@ -1715,7 +1738,9 @@ style Base_Widget_MaterialComponents_TextInputLayout
 style CardView
 style CardView_Dark
 style CardView_Light
+style CollapsedAppBar
 style Create
+style ExpandedAppBar
 style Platform_AppCompat
 style Platform_AppCompat_Light
 style Platform_MaterialComponents
@@ -1898,6 +1923,7 @@ style ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox
 style ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense
 style ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox
 style ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense
+style TitleGame
 style Widget_AppCompat_ActionBar
 style Widget_AppCompat_ActionBar_Solid
 style Widget_AppCompat_ActionBar_TabBar

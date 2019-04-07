@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\butus\\AndroidStudioProjects\\MQNEW\\MQ1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sl\\values-sl.xml",
+            "outputFile": "C:\\Users\\butus\\AndroidStudioProjects\\MQMQ\\MQ1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sl\\values-sl.xml",
             "map": [
                 {
                     "source": "C:\\Users\\butus\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-16.0.1.aar\\72cc7847da8208a58da502f28cd3c95d\\res\\values-sl\\values.xml",

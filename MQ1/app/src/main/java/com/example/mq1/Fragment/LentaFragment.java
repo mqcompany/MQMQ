@@ -21,6 +21,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class LentaFragment extends Fragment {
@@ -51,6 +52,7 @@ public class LentaFragment extends Fragment {
                     Read read = postSnapshot.getValue(Read.class);
                     read_list1.add(read);
                 }
+                Collections.reverse(read_list1);
                 adapterMQ = new AdapterMQ(getContext(), read_list1);
 
                 recyclerView.setAdapter(adapterMQ);

@@ -11,7 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CreateQuestions" android:theme="@style/Create"></activity>
+        <activity android:name=".ThisIsFragmentPlayGame"></activity>
+        <activity
+            android:name=".TittleGame"
+            android:theme="@style/TitleGame" />
+        <activity
+            android:name=".CreateQuestions"
+            android:theme="@style/Create" />
         <activity
             android:name=".CreateQuiz"
             android:theme="@style/Create" />
